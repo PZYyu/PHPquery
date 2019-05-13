@@ -3,11 +3,7 @@
 header("Content-type:text/html;charset=utf-8");
 
 include 'phpQuery/phpQuery.php';
-//phpQuery::newDocumentFile('http://www.helloweba.net/php/');
-//$artlist = pq("#main_l div");
-//foreach($artlist as $li){
-//    echo pq($li)->find('h2')->html()."<br>";
-//}
+
 
 
 $html = phpQuery::newDocumentFile("http://www.ks.gov.cn/ksyw_rdfw?itemid=1971&tname=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A&flag=0&currentPage=1&recordCount=6421");
@@ -59,9 +55,5 @@ function change_code($str)
     return mb_convert_encoding($str, 'ISO-8859-1', 'utf-8');
 }
 
-//$a = "2018-11-29";
-//$b = strtotime($a);
-//var_dump($b);
-
-//?>
+?>
 
